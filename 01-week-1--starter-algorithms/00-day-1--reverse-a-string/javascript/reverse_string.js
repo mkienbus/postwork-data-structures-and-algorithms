@@ -1,10 +1,12 @@
 function reverseString(str) {
   // type your code here
-  let splitString = str.split("");
-  let reversedArray = splitString.reverse();
-  let joinedArray = reversedArray.join("");
-  
-  return joinedArray;
+
+  let reversed = '';
+  for (let i = str.length - 1; i >= 0; i --){
+    reversed += str[i];
+  }
+  return reversed;
+
 }
 
 if (require.main === module) {
@@ -21,9 +23,6 @@ if (require.main === module) {
 module.exports = reverseString;
 
 // without using built in methods:
-// map over string, create new array
-// reverse mapped array
-// return reversed array
-
-// Please add your pseudocode to this file
-// And a written explanation of your solution
+// iterate over string, starting from far right index
+// create array with those values in order
+// return 'reversed' array
