@@ -1,6 +1,8 @@
 def reverse_string(str)
   #my code
-  str
+  str_array = str.split
+
+  return str_array
 end
 
 if __FILE__ == $PROGRAM_NAME
@@ -12,8 +14,10 @@ if __FILE__ == $PROGRAM_NAME
   puts "Expecting: 'ybabtac'"
   puts "=>", reverse_string('catbaby')
 
-  # Don't forget to add your own!
+
 end
 
-# Please add your pseudocode to this file
-# And a written explanation of your solution
+#pseudocode
+# split string into an array
+# reverse the array
+# return array
