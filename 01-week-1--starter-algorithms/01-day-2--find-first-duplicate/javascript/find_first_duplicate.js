@@ -1,13 +1,18 @@
 function findFirstDuplicate(arr) {
+  // new Set() creates an array of unique values
+  const uniques = new Set();
 
-  console.log(arr)
-  for (i = 0; i < arr.length ; i ++){
-      if (arr[i] == arr[i++]){
-        
-      }
+  for (const value of arr) {
+    console.log(value)
+    if (uniques.has(value)) {
+      // console.log(uniques)
+      return value;
     }
-    
+    uniques.add(value);
   }
+  return -1;
+    
+}
 
   
   
@@ -36,5 +41,7 @@ if (require.main === module) {
 module.exports = findFirstDuplicate;
 
 // pseudocode:
-// compare each element of array, to all elements of array
-// nested for loop
+// create new Set() of unique arrays
+// check uniqueness with Set.has
+// return the duplicate value if Set.has == true
+// else, return -1
