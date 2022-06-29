@@ -1,8 +1,19 @@
 def reverse_string(str)
   #my code
-  str_array = str.split
 
-  return str_array
+  #easy solution with built in methods
+  # reversed_str = str.reverse
+  # return reversed_str
+
+  #solution without using methods, but iteration instead
+  reversed_str = ""
+
+  str.chars.each do |character|
+    reversed_str = character + reversed_str
+  end
+
+  return reversed_str
+
 end
 
 if __FILE__ == $PROGRAM_NAME
@@ -20,4 +31,5 @@ end
 #pseudocode
 # split string into an array
 # reverse the array
-# return array
+# join string into new array
+# return new array
