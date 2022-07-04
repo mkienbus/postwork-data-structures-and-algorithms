@@ -1,4 +1,9 @@
+require 'set'
+
 def find_first_duplicate(arr)
+
+  Numbers = Set.new
+  
 
 end
 
@@ -11,7 +16,8 @@ if __FILE__ == $PROGRAM_NAME
   puts "Expecting: -1"
   puts "=>", find_first_duplicate([1, 2, 3, 4])
 
-  # Don't forget to add your own!
+  puts "Expecting: -1"
+  puts "=>", find_first_duplicate([])
 end
 
 # pseudocode:
