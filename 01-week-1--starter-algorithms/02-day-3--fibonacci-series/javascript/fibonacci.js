@@ -1,6 +1,11 @@
 function fibonacci(num) {
   // type your code here
   console.log(num)
+  numbers = [0,1]
+  numbers.map(
+    sum = numbers[0] + numbers[1]
+    )
+    console.log(sum)
 }
 
 if (require.main === module) {
