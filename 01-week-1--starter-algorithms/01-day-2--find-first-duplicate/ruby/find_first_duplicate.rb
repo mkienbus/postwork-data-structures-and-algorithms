@@ -2,7 +2,8 @@ require 'set'
 
 def find_first_duplicate(arr)
 
-  Numbers = Set.new
+ # Numbers = Set.new
+ arr.detect{ |e| arr.count(e) > 1 }
   
 
 end
