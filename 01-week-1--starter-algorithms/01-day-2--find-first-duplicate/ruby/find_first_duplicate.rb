@@ -3,9 +3,18 @@ require 'set'
 def find_first_duplicate(arr)
 
  # Numbers = Set.new
- arr.detect{ |e| arr.count(e) > 1 }
-  
+  map = {}
+  dup = nil
+  arr.each do |v|
+    map[v] = (map[v] || 0 ) + 1
 
+    if map[v] > 1
+      dup = v
+      break
+    end
+  end
+
+  return dup
 end
 
 if __FILE__ == $PROGRAM_NAME
