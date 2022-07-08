@@ -2,20 +2,17 @@ require 'set'
 
 def find_first_duplicate(arr)
 
- # Numbers = Set.new
-  map = {}
-  dup = nil
-  arr.each do |v|
-    map[v] = (map[v] || 0 ) + 1
+  unique_numbers = Set.new
 
-    if map[v] > 1
-      dup = v
-      break
-    end
+  arr.each do |value|
+    return value if unique_numbers.include?(value)
+    unique_numbers.add(value)
   end
 
-  return dup
+  -1
+
 end
+
 
 if __FILE__ == $PROGRAM_NAME
   puts "Expecting: 3"
