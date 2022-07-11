@@ -3,8 +3,8 @@ function fibonacci(num) {
   const numbers = [0,1];
   const sumNumbers = numbers.map(sumFunction(value))
 
-  function sumFunction(){
-    
+  function sumFunction(value){
+
   }
 }
 
