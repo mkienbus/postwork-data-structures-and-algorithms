@@ -1,12 +1,10 @@
 function fibonacci(num) {
   // type your code here
   const numbers = [0,1];
-  const sumNumbers = numbers.map(sumFunction(value))
 
-  function sumFunction(value){
 
   }
-}
+
 
 if (require.main === module) {
   // add your own tests in here
