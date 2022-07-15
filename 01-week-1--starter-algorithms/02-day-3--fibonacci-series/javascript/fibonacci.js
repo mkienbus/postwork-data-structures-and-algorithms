@@ -1,7 +1,18 @@
 function fibonacci(num) {
   // type your code here
-  const numbers = [0,1];
+  if (num <2){
+    return num;
+  }
 
+  let numbers = [0,1];
+
+  for (let i = 0; i <num - 1; ++i){
+    const sum = numbers[0] + numbers[1];
+    numbers = [numbers[1], sum];
+  }
+
+  return numbers[1];
+  
 
   }
 
