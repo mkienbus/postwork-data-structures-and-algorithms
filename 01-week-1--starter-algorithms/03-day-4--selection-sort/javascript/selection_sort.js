@@ -22,4 +22,6 @@ module.exports = selectionSort;
 // Please add your pseudocode to this file
 // And a written explanation of your solution
 
-//
+//find lowest value with Math.min(arr)
+//remove lowest value from arr, and add it to sortedArr
+//loop until all arr values are removed
