@@ -1,8 +1,15 @@
 function selectionSort(arr) {
   console.log(arr);
 
-  minValue = (Math.min(...arr))
-  console.log(minValue)
+  console.log(arr.length);
+
+  let i = arr.length;
+
+  while (i > 0){
+    minValue = (Math.min(...arr))
+    console.log(minValue);
+    i--;
+  }
 
   return{
 
