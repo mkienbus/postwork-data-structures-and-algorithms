@@ -1,5 +1,12 @@
 function selectionSort(arr) {
-  // type your code here
+  console.log(arr);
+
+  minValue = (Math.min(...arr))
+  console.log(minValue)
+
+  return{
+
+  }
 }
 
 if (require.main === module) {
