@@ -1,5 +1,6 @@
 function selectionSort(arr) {
-  console.log(arr);
+  
+  //console.log(arr);
 
   const sortedValues = [];
 
@@ -8,7 +9,7 @@ function selectionSort(arr) {
   while (i > 0){
     const minValue = (Math.min(...arr))
     const index = arr.indexOf(minValue);
-    console.log(minValue);
+    //console.log(minValue);
 
     sortedValues.push(minValue);
     arr.splice(index, 1);
