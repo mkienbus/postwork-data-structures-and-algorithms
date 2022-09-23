@@ -9,12 +9,14 @@ function selectionSort(arr) {
     const minValue = (Math.min(...arr))
     const index = arr.indexOf(minValue);
     console.log(minValue);
+
+    sortedValues.push(minValue);
+    arr.splice(index, 1);
     i--;
-  }
-
-  return{
 
   }
+
+  return sortedValues;
 }
 
 if (require.main === module) {
