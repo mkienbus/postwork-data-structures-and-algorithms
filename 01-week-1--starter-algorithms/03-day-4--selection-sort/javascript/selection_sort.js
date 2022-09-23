@@ -1,12 +1,13 @@
 function selectionSort(arr) {
   console.log(arr);
 
-  console.log(arr.length);
+  const sortedValues = [];
 
   let i = arr.length;
 
   while (i > 0){
-    minValue = (Math.min(...arr))
+    const minValue = (Math.min(...arr))
+    const index = arr.indexOf(minValue);
     console.log(minValue);
     i--;
   }
