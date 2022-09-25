@@ -17,5 +17,7 @@ if __FILE__ == $PROGRAM_NAME
   100.times { long_input << rand }
 end
 
-# Please add your pseudocode to this file
-# And a written explanation of your solution
+# find min value
+# append min value to sorted array
+# remove min value from original array
+# iterate until complete
