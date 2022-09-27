@@ -1,10 +1,15 @@
 def selection_sort(arr)
-  # type your code in here
+
   sorted = []
 
   until arr.length == 0
-    min = arr.length
+    min = arr.min
     idx = arr.index(min)
+    sorted << min 
+    arr.delete_at(idx)
+  end
+
+  sorted
 end
 
 if __FILE__ == $PROGRAM_NAME
